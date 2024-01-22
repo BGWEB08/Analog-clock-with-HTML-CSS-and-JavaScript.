@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet;
+}
+
+.clock {
+    position: relative;
+    width: 640px;
+    height: 640px;
+    background-image: url("/ios_clock.svg");
+    border: 5px solid black;
+    border-radius: 50%;
+    background: url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg") center whitesmoke;
+    background-repeat: no-repeat;
+    background-size: 88%;
+    box-shadow: 0 0 100px 0 rgb(0, 0, 0, 0.7);
+}
+
+.secs, .mins, .hours, .dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secs {
+    height: 12rem;
+    width: 0.1rem;
+    background-color: tomato;
+    transform-origin: 25% 0;
+}
+
+.mins {
+    height: 9rem;
+    width: 0.3rem;
+    border-radius: 20px;
+    background-color: black;
+    transform-origin: 25% 0;
+}
+
+.hours {
+    height: 6rem;
+    width: 0.5rem;
+    background-color: black;
+    border-radius: 15px;
+    transform-origin: 50% 0;
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: black;
+}
+
+@media (max-width: 540px) {
+    .clock {
+        width: 400px;
+        height: 400px;
+    }
+
+    .secs {
+        height: 10rem;
+    }
+
+    .mins {
+        height: 7.5rem;
+    }
+
+    .hours {
+        height: 5rem;
+    }
+
+    .dot {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .clock {
+        width: 320px;
+        height: 320px;
+    }
+
+    .secs {
+        height: 8rem;
+    }
+
+    .mins {
+        height: 6rem;
+    }
+
+    .hours {
+        height: 4rem;
+    }
+
+    .dot {
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+}
+
+
+@media (max-width: 170px) {
+    .clock {
+        width: 130px;
+        height: 130px;
+    }
+
+    .secs {
+        height: 3rem;
+    }
+
+    .mins {
+        height: 2.5rem;
+    }
+
+    .hours {
+        height: 2rem;
+    }
+
+    .dot {
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+}
+
