@@ -1,4 +1,4 @@
-# Responsive Analog Clock
+# Analog Clock
 
 This project provides an elegant analog clock that seamlessly adapts to any device. Built using HTML, CSS, and JavaScript, this analog clock offers a perfect blend of functionality and style.
 
